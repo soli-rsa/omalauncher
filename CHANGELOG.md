@@ -6,6 +6,33 @@ Dates are when the build was uploaded to Play.
 
 ## Unreleased
 
+## 1.12.0 (versionCode 48) – 2026-11-26
+
+- The launcher comes in Arabic and Persian, its first right-to-left languages: its screens, menus
+  and the stock widgets run right to left (owl 27), with home's pages, Linux windows and code left
+  to right as before.
+- omaterminal, the launcher's own terminal, can open terminals instead of foot (style › terminal):
+  typing goes through the phone's keyboard as in any app, and it uses about half the CPU.
+- A Linux window that keeps changing, such as an agent at work, takes about half the CPU to draw;
+  frosted widgets, monochrome icons, 3D scenes and btop/top in Linux cost less, worked out in C.
+- Fix: home could freeze building the drawer or the recent apps strip with a voice agent installed;
+  a widget's http source didn't fetch again when its headers changed.
+
+## 1.11.0 (versionCode 47) – 2026-11-25
+
+- Voice reads replies aloud with Supertonic, natural voices that run on the phone itself: a 145 MB
+  download under reading aloud in the voice settings, ten voices, 31 languages, offline.
+- Voice takes pictures and the clipboard: the paperclip adds a photo or what's copied, and the
+  keyboard's pictures and pasted ones go in while typing, with the next message, said or typed.
+- A Galaxy Z Fold8's inner screen shows two pages (#281).
+- Linux setup no longer stops at pacman-key with "needs to be run as root" on phones whose kernel
+  clears ptrace event messages, such as crDroid 4.14 (#179).
+- Less battery: connected devices share one SSH connection and wait for changes, and Linux's /proc
+  stand-ins are scanned only while something reads them.
+- Fix: a text field on a home tile or full-screen widget could raise the keyboard again after it
+  closed (#237); top in Linux showed 0.0% CPU; a widget that compiled a moment after a failed save
+  stayed invisible.
+
 ## 1.10.0 (versionCode 46) – 2026-11-22
 
 - Connected devices: other phones with Omalauncher and Omarchy computers (the Omalauncher plugin)
